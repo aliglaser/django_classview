@@ -6,6 +6,6 @@ app_name='teams'
 
 
 urlpatterns = [
-    path('', views.team_list, name='list'),
-    path('<pk>/', views.team_detail, name='detail'),
+    path('', views.TeamListView.as_view(), name='list'),
+    path('<pk>/', views.TeamDetailView.as_view(), name='detail'),
 ]
